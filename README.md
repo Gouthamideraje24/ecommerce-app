@@ -1,40 +1,40 @@
 # E-Commerce Web Application
 
 ## Project Overview
-This is a full stack E-Commerce web application developed as part of the Full Stack Developer Internship at Internage. The project is designed to follow real-world development practices including frontend, backend, APIs, and deployment.
+This is a full stack E-Commerce web application developed as part of the Full Stack Developer Internship at Internage. The project follows real-world development practices including frontend development, backend APIs, and version control using Git and GitHub.
 
 ## Project Duration
 6–8 Weeks
 
 ## Tech Stack
-- Frontend: React.js, HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB (to be added in next phase)
-- Version Control: Git & GitHub
+- **Frontend:** React.js, HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (to be added in Phase 2)
+- **Version Control:** Git & GitHub
 
 ## Project Structure
-ecommerce-app
-├── frontend
-│   ├── src
-│   └── public
-└── backend
+ecommerce-app/
+├── frontend/
+│   ├── src/
+│   └── public/
+└── backend/
     ├── server.js
-    └── node_modules
+    └── node_modules/
 
 ## Backend APIs
-- GET `/`  
+- **GET /**  
   Backend health check
 
-- GET `/api/products`  
+- **GET /api/products**  
   Returns list of products
 
 ## Current Status
-- Phase 1: Project planning & environment setup ✅
-- Phase 2: Frontend and backend integration (in progress)
+- ✅ Phase 1: Project setup, frontend & backend integration
+- ⏳ Phase 2: Database integration (upcoming)
 
 ## How to Run the Project
 
-### Backend
+### Frontend
 ```bash
-cd backend
-node server.js
+cd frontend
+npm start
