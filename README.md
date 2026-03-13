@@ -38,3 +38,4 @@ ecommerce-app/
 ```bash
 cd frontend
 npm start
+    
