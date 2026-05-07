@@ -2,14 +2,15 @@
 
 A full-stack e-commerce web application built with the MERN stack (MongoDB, Express.js, React, Node.js). Inspired by Flipkart and Amazon, featuring a modern UI with animations, category filters, cart management, and JWT authentication.
 
-![ShopNow Banner](https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80)
-
 ---
 
 ## 🌐 Live Demo
-- **Frontend:** Coming soon (Vercel)
-- **Backend API:** Coming soon (Render)
-- **GitHub:** [github.com/Gouthamideraje24/ecommerce-app](https://github.com/Gouthamideraje24/ecommerce-app)
+
+| | Link |
+|---|---|
+| 🖥️ **Frontend** | [https://ecommerce-app-ten-wheat.vercel.app](https://ecommerce-app-ten-wheat.vercel.app) |
+| 🔧 **Backend API** | [https://shopnow-backend-w9p7.onrender.com](https://shopnow-backend-w9p7.onrender.com) |
+| 📦 **GitHub** | [github.com/Gouthamideraje24/ecommerce-app](https://github.com/Gouthamideraje24/ecommerce-app) |
 
 ---
 
@@ -17,7 +18,7 @@ A full-stack e-commerce web application built with the MERN stack (MongoDB, Expr
 
 ### 👤 Customer Features
 - 🔐 User Registration & Login with JWT Authentication
-- 🛍️ Browse 16+ Products across 12 Categories
+- 🛍️ Browse 54+ Products across 12 Categories
 - 🔍 Search products by name and brand
 - 🗂️ Filter by Category (Phones, Laptops, Audio, Gaming, etc.)
 - 📊 Sort by Price and Rating
@@ -27,6 +28,7 @@ A full-stack e-commerce web application built with the MERN stack (MongoDB, Expr
 - 📦 Order Placement and Order History
 - 🇮🇳 Indian Rupee (₹) Pricing
 - 📱 Fully Responsive Design
+- 🎨 Smooth animations and hover effects
 
 ### 🔧 Admin Features
 - ➕ Create / Edit / Delete Products
@@ -46,6 +48,7 @@ A full-stack e-commerce web application built with the MERN stack (MongoDB, Expr
 | Axios | Latest | HTTP API Requests |
 | Context API | Built-in | State Management |
 | Vite | Latest | Build Tool |
+| Google Fonts | - | Syne + DM Sans Typography |
 
 ### Backend
 | Technology | Version | Purpose |
@@ -59,6 +62,14 @@ A full-stack e-commerce web application built with the MERN stack (MongoDB, Expr
 | CORS | 2 | Cross-Origin Requests |
 | dotenv | 17 | Environment Variables |
 | nodemon | 3 | Dev Auto-restart |
+
+### Deployment
+| Service | Purpose |
+|---|---|
+| Vercel | Frontend Hosting |
+| Render | Backend Hosting |
+| MongoDB Atlas | Cloud Database |
+| GitHub | Version Control |
 
 ---
 
@@ -107,7 +118,7 @@ ecommerce-app/
 │   │   ├── authRoutes.js          # /api/auth
 │   │   ├── productRoutes.js       # /api/products
 │   │   └── orderRoutes.js         # /api/orders
-│   ├── seeder.js                  # Database seeder (16 products)
+│   ├── seeder.js                  # Database seeder (54 products)
 │   ├── server.js                  # Express app entry point
 │   ├── .env                       # Environment variables (gitignored)
 │   └── package.json
@@ -152,7 +163,7 @@ Expected output:
 ```
 MongoDB connected
 Old products cleared
-✅ 16 Products seeded successfully!
+✅ 54 Products seeded successfully!
 ```
 
 ### 5. Start the Backend Server
@@ -202,7 +213,7 @@ http://localhost:5173
 |---|---|---|---|
 | POST | / | Create new order | Private |
 | GET | / | Get all orders | Admin |
-| GET | /myorders | Get logged-in user's orders | Private |
+| GET | /myorders | Get logged-in user orders | Private |
 | GET | /:id | Get order by ID | Private |
 | PUT | /:id/pay | Mark order as paid | Private |
 
@@ -274,27 +285,34 @@ http://localhost:5173
 - **Responsive grid** layout (auto-fill columns)
 - **Custom scrollbar** in brand orange color
 - **Google Fonts** — Syne (headings) + DM Sans (body)
+- **54 products** across 12 categories
 
 ---
 
 ## 🚀 Deployment
 
-### Frontend → Vercel
-```bash
-cd client
-npm run build
-# Upload dist/ folder to Vercel
-# Or connect GitHub repo directly
+### Frontend → Vercel ✅
+```
+Live URL:       https://ecommerce-app-ten-wheat.vercel.app
+Framework:      Vite
+Root Directory: client
+Build Command:  npm run build
+Output:         dist/
 ```
 
-### Backend → Render
+### Backend → Render ✅
 ```
-1. Go to render.com
-2. New Web Service → Connect GitHub repo
-3. Root directory: server
-4. Build command: npm install
-5. Start command: node server.js
-6. Add environment variables (MONGO_URI, JWT_SECRET, PORT)
+Live URL:       https://shopnow-backend-w9p7.onrender.com
+Root Directory: server
+Build Command:  npm install
+Start Command:  node server.js
+```
+
+### Database → MongoDB Atlas ✅
+```
+Cloud hosted MongoDB
+Cluster:        cluster0.l7go3bx.mongodb.net
+Network Access: 0.0.0.0/0 (all IPs allowed)
 ```
 
 ---
@@ -306,8 +324,20 @@ npm run build
 | Phase 1 | Planning & Setup | Jan 30, 2026 | ✅ Done |
 | Phase 2 | Frontend Development | Feb 6, 2026 | ✅ Done |
 | Phase 3 | Backend & Database | Feb 27, 2026 | ✅ Done |
-| Phase 4 | Deployment & Testing | Mar 13, 2026 | 🔄 In Progress |
-| Phase 5 | Documentation & Feedback | Mar 20, 2026 | 🔄 In Progress |
+| Phase 4 | Deployment & Testing | Mar 13, 2026 | ✅ Done |
+| Phase 5 | Documentation & Feedback | Mar 20, 2026 | ✅ Done |
+
+---
+
+## 📊 Evaluation Criteria
+
+| Criteria | Weightage | Status |
+|---|---|---|
+| Frontend Implementation | 25% | ✅ Complete |
+| Backend & APIs | 25% | ✅ Complete |
+| Integration & Deployment | 20% | ✅ Complete |
+| Code Quality & Structure | 15% | ✅ Complete |
+| Documentation | 15% | ✅ Complete |
 
 ---
 
@@ -315,6 +345,7 @@ npm run build
 
 **Gouthami Deraje**
 - 🐙 GitHub: [@Gouthamideraje24](https://github.com/Gouthamideraje24)
+- 🌐 Live App: [ecommerce-app-ten-wheat.vercel.app](https://ecommerce-app-ten-wheat.vercel.app)
 
 ---
 
@@ -338,5 +369,8 @@ MIT License — Free to use for learning and educational purposes.
 
 <div align="center">
   <strong>⭐ Star this repo if you found it helpful!</strong><br/>
-  Built with ❤️ using the MERN Stack
+  Built with ❤️ using the MERN Stack<br/><br/>
+  <a href="https://ecommerce-app-ten-wheat.vercel.app">🌐 View Live App</a> •
+  <a href="https://github.com/Gouthamideraje24/ecommerce-app">📦 GitHub Repo</a> •
+  <a href="https://shopnow-backend-w9p7.onrender.com">🔧 API</a>
 </div>
