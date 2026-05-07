@@ -14,7 +14,7 @@ const app = express()
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://ecommerce-app-xxx.vercel.app'
+    'https://ecommerce-app-ten-wheat.vercel.app'
   ],
   credentials: true
 }))
