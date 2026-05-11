@@ -70,7 +70,7 @@ const CartPage = () => {
 
           {shipping > 0 && <div style={{ background: '#fff8e1', borderRadius: '8px', padding: '10px 14px', fontSize: '0.8rem', color: '#856404', marginBottom: '1rem' }}>Add ${(50 - totalPrice).toFixed(2)} more for FREE shipping!</div>}
 
-          <button onClick={() => navigate('/orders')} style={{
+          <button onClick={() => navigate('/checkout')} style={{
             width: '100%', padding: '15px', background: '#FF4D00', color: 'white',
             border: 'none', borderRadius: '50px', fontSize: '1rem', fontWeight: 700,
             cursor: 'pointer', transition: 'all 0.2s', boxShadow: '0 4px 20px rgba(255,77,0,0.35)'
